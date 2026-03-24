@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.vanilladevkit.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ClientChunkCacheStorageAccessor",
+		"ContainerScreenKeyMixin",
+		"MinecraftTickMixin",
+		"PacketSendMixin",
+		"TitleScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

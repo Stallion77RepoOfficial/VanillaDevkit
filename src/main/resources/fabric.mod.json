@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilladevkit",
+	"version": "${version}",
+	"name": "Vanilla DevKit",
+	"description": "Client-side vanilla protocol and container testing toolkit.",
+	"accessWidener": "vanilladevkit.accesswidener",
+	"authors": [
+		"Vanilla DevKit"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/vanilladevkit/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vanilladevkit.VanillaDevKit"
+		],
+		"client": [
+			"com.vanilladevkit.VanillaDevKitClient"
+		]
+	},
+	"mixins": [
+		"vanilladevkit.mixins.json",
+		{
+			"config": "vanilladevkit.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
